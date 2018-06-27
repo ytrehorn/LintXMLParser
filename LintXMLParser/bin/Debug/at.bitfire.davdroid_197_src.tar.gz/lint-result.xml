@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.2.0-alpha01">
+
+    <issue
+        id="LintError"
+        severity="Error"
+        message="Unexpected failure during lint analysis of AccountsActivity.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;`NullPointerException:ImplicitUnprotectedIntentSendDetector.report(ImplicitUnprotectedIntentSendDetector.java:245)←ImplicitUnprotectedIntentSendDetector.visitMethod(ImplicitUnprotectedIntentSendDetector.java:157)←UElementVisitor$DelegatingPsiVisitor.visitMethodCallExpression(UElementVisitor.kt:1027)←UElementVisitor$DelegatingPsiVisitor.visitCallExpression(UElementVisitor.kt:1007)←KotlinUFunctionCallExpression.accept(KotlinUFunctionCallExpression.kt:114)←UIfExpression$DefaultImpls.accept(UIfExpression.kt:73)←KotlinUIfExpression.accept(KotlinUIfExpression.kt:24)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)`&#xA;&#xA;You can set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout."
+        category="Lint"
+        priority="10"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/java/at/bitfire/davdroid/ui/AccountsActivity.kt"/>
+    </issue>
+
+    <issue
+        id="LintError"
+        severity="Error"
+        message="Unexpected failure during lint analysis of LoginActivity.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;`NullPointerException:ImplicitUnprotectedIntentSendDetector.report(ImplicitUnprotectedIntentSendDetector.java:245)←ImplicitUnprotectedIntentSendDetector.visitMethod(ImplicitUnprotectedIntentSendDetector.java:128)←UElementVisitor$DelegatingPsiVisitor.visitMethodCallExpression(UElementVisitor.kt:1027)←UElementVisitor$DelegatingPsiVisitor.visitCallExpression(UElementVisitor.kt:1007)←KotlinUFunctionCallExpression.accept(KotlinUFunctionCallExpression.kt:114)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←UBlockExpression$DefaultImpls.accept(UBlockExpression.kt:35)←KotlinUBlockExpression.accept(KotlinUBlockExpression.kt:24)`&#xA;&#xA;You can set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout."
+        category="Lint"
+        priority="10"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/java/at/bitfire/davdroid/ui/setup/LoginActivity.kt"/>
+    </issue>
+
+    <issue
+        id="LintError"
+        severity="Error"
+        message="Unexpected failure during lint analysis of StartupDialogFragment.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;`NullPointerException:ImplicitUnprotectedIntentSendDetector.report(ImplicitUnprotectedIntentSendDetector.java:245)←ImplicitUnprotectedIntentSendDetector.visitMethod(ImplicitUnprotectedIntentSendDetector.java:157)←UElementVisitor$DelegatingPsiVisitor.visitMethodCallExpression(UElementVisitor.kt:1027)←UElementVisitor$DelegatingPsiVisitor.visitCallExpression(UElementVisitor.kt:1007)←KotlinUFunctionCallExpression.accept(KotlinUFunctionCallExpression.kt:114)←UQualifiedReferenceExpression$DefaultImpls.accept(UQualifiedReferenceExpression.kt:48)←KotlinUQualifiedReferenceExpression.accept(KotlinUQualifiedReferenceExpression.kt:29)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)`&#xA;&#xA;You can set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout."
+        category="Lint"
+        priority="10"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/java/at/bitfire/davdroid/ui/StartupDialogFragment.kt"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="Old buildToolsVersion 27.0.1; recommended version is 27.0.3 or later"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    buildToolsVersion &apos;27.0.1&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="32"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:appcompat-v7 than 27.0.2 is available: 27.1.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:appcompat-v7:27.0.2&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="97"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:cardview-v7 than 27.0.2 is available: 27.1.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:cardview-v7:27.0.2&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="98"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:design than 27.0.2 is available: 27.1.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:design:27.0.2&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="99"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:preference-v14 than 27.0.2 is available: 27.1.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:preference-v14:27.0.2&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="100"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of org.apache.commons:commons-lang3 than 3.6 is available: 3.7"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;org.apache.commons:commons-lang3:3.6&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/build.gradle"
+            line="107"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ParcelClassLoader"
+        severity="Warning"
+        message="Using the default class loader will not work if you are restoring your own classes. Consider using for example `readBundle(getClass().getClassLoader())` instead."
+        category="Correctness"
+        priority="3"
+        summary="Default Parcel Class Loader"
+        explanation="The documentation for `Parcel#readParcelable(ClassLoader)` (and its variations) says that you can pass in `null` to pick up the default class loader. However, that ClassLoader is a system class loader and is not able to find classes in your own application.&#xA;&#xA;If you are writing your own classes into the `Parcel` (not just SDK classes like `String` and so on), then you should supply a `ClassLoader` for your application instead; a simple way to obtain one is to just call `getClass().getClassLoader()` from your own class."
+        url="http://developer.android.com/reference/android/os/Parcel.html"
+        urls="http://developer.android.com/reference/android/os/Parcel.html"
+        errorLine1="                    val params = parcel.readBundle()"
+        errorLine2="                                        ~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/java/at/bitfire/davdroid/AccountSettings.kt"
+            line="257"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="CommonTaskAffinity"
+        severity="Warning"
+        message="SM12: Common Task Affinity | Consider setting the task affinity of your app explicitly to an empty value"
+        category="Security"
+        priority="5"
+        summary="SM12: Common Task Affinity | Consider setting the task affinity of your app explicitly to an empty value"
+        explanation="The application&apos;s task affinity should be set to an empty value, because any other application could set its task affinity to any specific value. Non-empty task affinity values allow malicious apps to start various kinds of phishing and denial of service attacks. With an empty task affinity the app will get a unique task affinity at run time,  that is not shared with other apps. This makes it impossible for other apps to attach."
+        url="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-ren-chuangang.pdf"
+        urls="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-ren-chuangang.pdf,https://bitbucket.org/secure-it-i/android-app-vulnerability-benchmarks/wiki/Using%20Task%20Affinity%20to%20launch%20Denial-of-service%20or%20Phishing%20attacks%20in%20Android"
+        errorLine1="    &lt;application"
+        errorLine2="    ^">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/AndroidManifest.xml"
+            line="45"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        severity="Warning"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        category="Performance"
+        priority="6"
+        summary="Node can be replaced by a `TextView` with compound drawables"
+        explanation="A `LinearLayout` which contains an `ImageView` and a `TextView` can be more efficiently handled as a compound drawable (a single TextView, using the `drawableTop`, `drawableLeft`, `drawableRight` and/or `drawableBottom` attributes to draw one or more images adjacent to the text).&#xA;&#xA;If the two widgets are offset from each other with margins, this can be replaced with a `drawablePadding` attribute.&#xA;&#xA;There&apos;s a lint quickfix to perform this conversion in the Eclipse plugin."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_list_item.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        severity="Warning"
+        message="Very long vector path (871 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        category="Performance"
+        priority="5"
+        summary="Long vector paths"
+        explanation="Using long vector paths is bad for performance. There are several ways to make the `pathData` shorter:&#xA;* Using less precision&#xA;* Removing some minor details&#xA;* Using the Android Studio vector conversion tool&#xA;* Rasterizing the image (converting to PNG)"
+        errorLine1="        android:pathData=&quot;M19.43,12.98c0.04,-0.32 0.07,-0.64 0.07,-0.98s-0.03,-0.66 -0.07,-0.98l2.11,-1.65c0.19,-0.15 0.24,-0.42 0.12,-0.64l-2,-3.46c-0.12,-0.22 -0.39,-0.3 -0.61,-0.22l-2.49,1c-0.52,-0.4 -1.08,-0.73 -1.69,-0.98l-0.38,-2.65C14.46,2.18 14.25,2 14,2h-4c-0.25,0 -0.46,0.18 -0.49,0.42l-0.38,2.65c-0.61,0.25 -1.17,0.59 -1.69,0.98l-2.49,-1c-0.23,-0.09 -0.49,0 -0.61,0.22l-2,3.46c-0.13,0.22 -0.07,0.49 0.12,0.64l2.11,1.65c-0.04,0.32 -0.07,0.65 -0.07,0.98s0.03,0.66 0.07,0.98l-2.11,1.65c-0.19,0.15 -0.24,0.42 -0.12,0.64l2,3.46c0.12,0.22 0.39,0.3 0.61,0.22l2.49,-1c0.52,0.4 1.08,0.73 1.69,0.98l0.38,2.65c0.03,0.24 0.24,0.42 0.49,0.42h4c0.25,0 0.46,-0.18 0.49,-0.42l0.38,-2.65c0.61,-0.25 1.17,-0.59 1.69,-0.98l2.49,1c0.23,0.09 0.49,0 0.61,-0.22l2,-3.46c0.12,-0.22 0.07,-0.49 -0.12,-0.64l-2.11,-1.65zM12,15.5c-1.93,0 -3.5,-1.57 -3.5,-3.5s1.57,-3.5 3.5,-3.5 3.5,1.57 3.5,3.5 -1.57,3.5 -3.5,3.5z&quot;/>"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/drawable/ic_settings_action.xml"
+            line="8"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        severity="Warning"
+        message="Very long vector path (871 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        category="Performance"
+        priority="5"
+        summary="Long vector paths"
+        explanation="Using long vector paths is bad for performance. There are several ways to make the `pathData` shorter:&#xA;* Using less precision&#xA;* Removing some minor details&#xA;* Using the Android Studio vector conversion tool&#xA;* Rasterizing the image (converting to PNG)"
+        errorLine1="        android:pathData=&quot;M19.43,12.98c0.04,-0.32 0.07,-0.64 0.07,-0.98s-0.03,-0.66 -0.07,-0.98l2.11,-1.65c0.19,-0.15 0.24,-0.42 0.12,-0.64l-2,-3.46c-0.12,-0.22 -0.39,-0.3 -0.61,-0.22l-2.49,1c-0.52,-0.4 -1.08,-0.73 -1.69,-0.98l-0.38,-2.65C14.46,2.18 14.25,2 14,2h-4c-0.25,0 -0.46,0.18 -0.49,0.42l-0.38,2.65c-0.61,0.25 -1.17,0.59 -1.69,0.98l-2.49,-1c-0.23,-0.09 -0.49,0 -0.61,0.22l-2,3.46c-0.13,0.22 -0.07,0.49 0.12,0.64l2.11,1.65c-0.04,0.32 -0.07,0.65 -0.07,0.98s0.03,0.66 0.07,0.98l-2.11,1.65c-0.19,0.15 -0.24,0.42 -0.12,0.64l2,3.46c0.12,0.22 0.39,0.3 0.61,0.22l2.49,-1c0.52,0.4 1.08,0.73 1.69,0.98l0.38,2.65c0.03,0.24 0.24,0.42 0.49,0.42h4c0.25,0 0.46,-0.18 0.49,-0.42l0.38,-2.65c0.61,-0.25 1.17,-0.59 1.69,-0.98l2.49,1c0.23,0.09 0.49,0 0.61,-0.22l2,-3.46c0.12,-0.22 0.07,-0.49 -0.12,-0.64l-2.11,-1.65zM12,15.5c-1.93,0 -3.5,-1.57 -3.5,-3.5s1.57,-3.5 3.5,-3.5 3.5,1.57 3.5,3.5 -1.57,3.5 -3.5,3.5z&quot;/>"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/drawable/ic_settings_dark.xml"
+            line="17"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        severity="Warning"
+        message="Very long vector path (1169 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        category="Performance"
+        priority="5"
+        summary="Long vector paths"
+        explanation="Using long vector paths is bad for performance. There are several ways to make the `pathData` shorter:&#xA;* Using less precision&#xA;* Removing some minor details&#xA;* Using the Android Studio vector conversion tool&#xA;* Rasterizing the image (converting to PNG)"
+        errorLine1="                android:scaleY=&quot;0.12466422&quot;>"
+        errorLine2="                                                                                                    ^">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/drawable/twitter.xml"
+            line="12"
+            column="101"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/cardview_dark_background` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="              android:background=&quot;@color/cardview_dark_background&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/nav_header_accounts.xml"
+            line="14"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.beta_feedback_url` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;beta_feedback_url&quot;>https://forums.bitfire.at/category/9/beta-test-discussion?pk_campaign=davdroid-app&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="24"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="11"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="12"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="12"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="11"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="12"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="11"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_donate` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_donate&quot;>Open-Source Information&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="35"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="14"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="14"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="14"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="11"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="16"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_donate_message` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_donate_message&quot;>We\&apos;re happy that you use DAVdroid, which is open-source software (GPLv3). Because developing DAVdroid is hard work and took us thousands of working hours, please consider a donation.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="36"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="15"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="15"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="15"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="12"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="17"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_donate_now` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_donate_now&quot;>Show donation page&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="37"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="22"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="16"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="13"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="18"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_donate_later` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_donate_later&quot;>Maybe later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="38"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="17"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="14"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="19"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_opentasks_not_installed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_opentasks_not_installed&quot;>OpenTasks not installed&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="42"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="18"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="23"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_opentasks_not_installed_message` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_opentasks_not_installed_message&quot;>The OpenTasks app is not available, so DAVdroid won\&apos;t be able to synchronize task lists.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="43"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="22"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="28"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="22"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="22"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="19"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="24"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_opentasks_reinstall_davdroid` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_opentasks_reinstall_davdroid&quot;>After installing OpenTasks, you have to RE-INSTALL DAVdroid and add your accounts again (Android bug).&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="44"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="29"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="23"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="20"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="25"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="25"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.startup_opentasks_not_installed_install` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;startup_opentasks_not_installed_install&quot;>Install OpenTasks&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="45"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="30"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="28"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="28"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="28"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="24"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="21"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="26"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="27"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="26"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.login_help_url` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;login_help_url&quot;>https://www.davdroid.com/tested-with/?pk_campaign=davdroid-app&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="144"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="117"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="117"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="117"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.certificate_notification_connection_security` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;certificate_notification_connection_security&quot;>DAVdroid: Connection security&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="300"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="214"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="217"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="259"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="213"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="240"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="240"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="231"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="254"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="257"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="232"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="257"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="254"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="211"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="218"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="214"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="253"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="215"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.trust_certificate_unknown_certificate_found` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;trust_certificate_unknown_certificate_found&quot;>DAVdroid has encountered an unknown certificate. Do you want to trust it?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/strings.xml"
+            line="301"
+            column="13"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="215"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="218"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-de/strings.xml"
+            line="260"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="214"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="241"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-hu/strings.xml"
+            line="241"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="232"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ja/strings.xml"
+            line="255"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nb-rNO/strings.xml"
+            line="258"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="233"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="258"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="255"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-ru/strings.xml"
+            line="212"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-sr/strings.xml"
+            line="219"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-uk/strings.xml"
+            line="215"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="254"
+            column="11"/>
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="216"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.primaryLightColor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;primaryLightColor&quot;>#aee571&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/styles.xml"
+            line="17"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.secondaryDarkColor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;secondaryDarkColor&quot;>#c43c00&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/styles.xml"
+            line="21"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.preference_fallback_accent_color` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;preference_fallback_accent_color&quot;>@color/secondaryColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values/styles.xml"
+            line="55"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;please_wait&quot;>Chvíli strpení ...&lt;/string>"
+        errorLine2="                             ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="7"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;please_wait&quot;>Vent venligst ...&lt;/string>"
+        errorLine2="                             ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="9"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;account_synchronizing_now&quot;>Sincronizando...&lt;/string>"
+        errorLine2="                                           ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-es/strings.xml"
+            line="75"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;account_synchronizing_now&quot;>Aan het synchronizeren...&lt;/string>"
+        errorLine2="                                           ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="82"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Lütfen bekle, sunucu sorgulanıyor...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-tr-rTR/strings.xml"
+            line="102"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Chvíli strpení, probíhá dotazování serveru...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-cs/strings.xml"
+            line="120"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>請稍待，正在詢問伺服器...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rTW/strings.xml"
+            line="123"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Vent, forespørger hos serveren...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-da/strings.xml"
+            line="124"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Attendere, invio richiesta al server...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-it/strings.xml"
+            line="128"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Veuillez patienter, nous interrogeons le serveur ...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-fr/strings.xml"
+            line="130"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Even geduld, verzoek naar server...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-nl/strings.xml"
+            line="132"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Aguarde, procurando servidor...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pt-rBR/strings.xml"
+            line="136"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>正在与服务器通信，请稍等...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-zh-rCN/strings.xml"
+            line="137"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="  &lt;string name=&quot;login_querying_server&quot;>Proszę czekać, odpytywanie serwera...&lt;/string>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/values-pl/strings.xml"
+            line="139"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). &#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/activity_create_address_book.xml"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). &#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/activity_create_calendar.xml"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_caldav_item.xml"
+            line="88"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_carddav_item.xml"
+            line="59"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="            &lt;ImageView"
+        errorLine2="            ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_list_item.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`, but not both"
+        category="Accessibility"
+        priority="2"
+        summary="Missing accessibility label"
+        explanation="Editable text fields should provide an `android:hint` or, provided your `minSdkVersion` is at least 17, they may be referenced by a view with a `android:labelFor` attribute.&#xA;&#xA;When using `android:labelFor`, be sure to provide an `android:text` or an `android:contentDescription`.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/activity_create_address_book.xml"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`, but not both"
+        category="Accessibility"
+        priority="2"
+        summary="Missing accessibility label"
+        explanation="Editable text fields should provide an `android:hint` or, provided your `minSdkVersion` is at least 17, they may be referenced by a view with a `android:labelFor` attribute.&#xA;&#xA;When using `android:labelFor`, be sure to provide an `android:text` or an `android:contentDescription`.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/activity_create_calendar.xml"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        category="Accessibility"
+        priority="2"
+        summary="Missing accessibility label"
+        explanation="Editable text fields should provide an `android:hint` or, provided your `minSdkVersion` is at least 17, they may be referenced by a view with a `android:labelFor` attribute.&#xA;&#xA;When using `android:labelFor`, be sure to provide an `android:text` or an `android:contentDescription`.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="    &lt;EditText"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/edit_password.xml"
+            line="14"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="            android:paddingRight=&quot;0dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_caldav_item.xml"
+            line="92"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="        android:paddingRight=&quot;0dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/astridytrehorn/Desktop/Apps 2/at.bitfire.davdroid_197_src.tar.gz/app/src/main/res/layout/account_carddav_item.xml"
+            line="63"
+            column="9"/>
+    </issue>
+
+</issues>

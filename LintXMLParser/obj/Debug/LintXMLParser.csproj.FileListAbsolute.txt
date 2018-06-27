@@ -1,0 +1,6 @@
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\bin\Debug\LintXMLParser.exe.config
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\obj\Debug\LintXMLParser.csprojResolveAssemblyReference.cache
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\bin\Debug\LintXMLParser.exe
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\bin\Debug\LintXMLParser.pdb
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\obj\Debug\LintXMLParser.exe
+c:\users\moritz\documents\visual studio 2013\Projects\LintXMLParser\LintXMLParser\obj\Debug\LintXMLParser.pdb
