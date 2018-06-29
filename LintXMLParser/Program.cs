@@ -123,7 +123,7 @@ namespace LintXMLParser
 
             Environment.CurrentDirectory = rootpath;
 
-            File.WriteAllLines(rootpath + "output.txt", dataAsStringList);
+            File.WriteAllLines(rootpath + "\\output.txt", dataAsStringList);
             // Rename .txt file to .csv file when this is finished, it can then be opened in Excel/Other Office applications with proper columns/rows.
             Console.WriteLine("Finished. Press any Key to Exit...");
             Console.ReadKey();
