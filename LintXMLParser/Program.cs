@@ -16,8 +16,10 @@ namespace LintXMLParser
 
         static void Main(string[] args)
         {
+            int id = 0;
             var rootpath = System.Environment.CurrentDirectory;
-            var directories = Directory.GetDirectories(rootpath);
+            var filesPath = "C:\\linted\\";
+            var directories = Directory.GetDirectories(filesPath);
 
             // Initialize Final List
             finalList = new List<AppData>();
@@ -28,9 +30,24 @@ namespace LintXMLParser
             {
                 Environment.CurrentDirectory = dir;
 
+                if (id == 1053)
+                {
+                    int a = 5;
+                }
+
+                var res = Directory.GetFiles(".\\", "lint-result.xml", System.IO.SearchOption.AllDirectories);
+
+                if (res.Length == 0)
+                    continue;
+
                 string[] appSplit = new string[] { "\\" };
-                string[] splitPath = dir.Split(appSplit, System.StringSplitOptions.RemoveEmptyEntries);
-                string appName = splitPath[splitPath.Length - 1];
+                string[] splitPath = res[0].Split(appSplit, System.StringSplitOptions.RemoveEmptyEntries);
+
+                string appName;
+                if (splitPath.Length > 2)
+                    appName = dir.Split(appSplit, System.StringSplitOptions.RemoveEmptyEntries)[2].Replace("_src", "");
+                else
+                    appName = dir.Split(appSplit, System.StringSplitOptions.RemoveEmptyEntries)[2].Replace("_src", "");
 
                 if(appName.Contains("tar.gz"))
                      appName = appName.Replace("_src.tar.gz", "");
@@ -44,7 +61,7 @@ namespace LintXMLParser
                 try
                 {
                      doc = new XmlDocument();
-                     doc.Load(".\\lint-result.xml");
+                     doc.Load(res[0]);
                 }
                 catch (Exception e)
                 {
@@ -68,6 +85,7 @@ namespace LintXMLParser
                         continue;
 
                     AppData data = new AppData();
+                    data.AppID = id;
                     data.AppName = appName;
                     string smellID = node.Attributes["summary"].InnerText;
                     string[] smellAray = smellID.Split(':');
@@ -114,11 +132,11 @@ namespace LintXMLParser
 
                 foreach (AppData dat in appDataList)
                 {
-                    string dataAsString = dat.AppName + ";" + dat.SmellID + ";" + dat.Line + ";" + dat.Method + ";" + dat.AffectedClass + ";" + dat.Package;
+                    string dataAsString = dat.AppID + ";" + dat.AppName + ";" + dat.SmellID + ";" + dat.Line + ";" + dat.Method + ";" + dat.AffectedClass + ";" + dat.Package;
                     dataAsStringList.Add(dataAsString);
                 }
                 // Parse each individual issue Data
-                
+                id += 1;
             }
 
             Environment.CurrentDirectory = rootpath;

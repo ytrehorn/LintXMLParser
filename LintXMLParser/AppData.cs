@@ -8,12 +8,19 @@ namespace LintXMLParser
 {
     class AppData
     {
+        private int appID;
         private String smellid;
         private String affectedClass;
         private String line;
         private String package;
         private String method;
         private String appName;
+
+        public int AppID
+        {
+            set { appID = value; }
+            get {return appID;}
+        }
 
         public String AppName
         {
