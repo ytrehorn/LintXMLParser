@@ -30,11 +30,6 @@ namespace LintXMLParser
             {
                 Environment.CurrentDirectory = dir;
 
-                if (id == 1053)
-                {
-                    int a = 5;
-                }
-
                 var res = Directory.GetFiles(".\\", "lint-result.xml", System.IO.SearchOption.AllDirectories);
 
                 if (res.Length == 0)
